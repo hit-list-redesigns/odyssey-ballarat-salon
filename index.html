@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Odyssey Ballarat Salon | Blonde, balayage &amp; colour in Golden Point</title>
+<meta name="description" content="Blonde, balayage, highlights and colour correction at Odyssey Ballarat Salon, 501A Main Rd, Golden Point. Haircut and blowave included in every colour package. Book online.">
+<meta name="theme-color" content="#17261d">
+<meta property="og:title" content="Odyssey Ballarat Salon">
+<meta property="og:description" content="Blonde, balayage and colour at 501A Main Rd, Golden Point. Book online.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1554519934-e32b1629d9ee?w=1200&h=630&fit=crop&q=75&auto=format">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1554519934-e32b1629d9ee?w=1100&q=72&auto=format" fetchpriority="high">
+<style>
+:root{
+  --leaf:#17261d;
+  --leaf-2:#203328;
+  --leaf-3:#2b4334;
+  --glass:#e8efe6;
+  --glass-2:#dbe6d8;
+  --iron:#f6f7f2;
+  --ink:#13201a;
+  --ink-soft:#3c4d42;
+  --on-leaf:#f6f7f2;
+  --on-leaf-soft:#b8c8ba;
+  --gold:#f2b21b;
+  --gold-soft:#f7cd63;
+  --gold-ink:#1d1603;
+  --gold-deep:#6f4b00;
+  --rule:rgba(19,32,26,.18);
+  --rule-leaf:rgba(246,247,242,.16);
+  --display:"Gloock", "Times New Roman", serif;
+  --sans:"Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wrap:min(1240px, 100% - 2*var(--gutter));
+  --gutter:clamp(16px, 4vw, 48px);
+  --ease-out:cubic-bezier(.16,1,.3,1);
+  --bar:52px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scrollbar-color:var(--leaf-3) var(--glass);scrollbar-width:thin;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+::-webkit-scrollbar{width:11px;height:11px}
+::-webkit-scrollbar-track{background:var(--glass)}
+::-webkit-scrollbar-thumb{background:var(--leaf-3);border:3px solid var(--glass);border-radius:8px}
+::selection{background:var(--gold);color:var(--gold-ink)}
+body{margin:0;background:var(--glass);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.6;font-variant-numeric:tabular-nums;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-underline-offset:.22em;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:2px}
+.on-gold :focus-visible{outline-color:var(--ink)}
+h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;text-wrap:balance;letter-spacing:-.015em;word-spacing:.06em}
+p{margin:0;text-wrap:pretty}
+.wrap{width:var(--wrap);margin-inline:auto}
+.skip{position:absolute;left:-999px;top:8px;z-index:100;background:var(--gold);color:var(--gold-ink);padding:10px 16px;font-weight:600}
+.skip:focus{left:8px}
+.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:52px;padding:0 1.5em;font:600 1rem/1 var(--sans);letter-spacing:.01em;text-decoration:none;border-radius:999px;border:1.5px solid transparent;transition:background-color .25s var(--ease-out),color .25s var(--ease-out),transform .25s var(--ease-out),border-color .25s var(--ease-out);white-space:nowrap}
+.btn svg{width:18px;height:18px;flex:none}
+.btn:active{transform:translateY(1px)}
+.btn-gold{background:var(--gold);color:var(--gold-ink)}
+.btn-gold:hover{background:var(--gold-soft);text-decoration:none}
+.btn-line{border-color:currentColor;color:inherit}
+.btn-line:hover{background:rgba(246,247,242,.1);text-decoration:none}
+.btn-ink{background:var(--ink);color:var(--iron)}
+.btn-ink:hover{background:var(--leaf-3);text-decoration:none}
+.on-light .btn-line:hover{background:rgba(19,32,26,.06)}
+.arrow{transition:transform .3s var(--ease-out)}
+a:hover .arrow{transform:translateX(4px)}
+
+/* ---------- header ---------- */
+.top{position:sticky;top:0;z-index:40;background:var(--leaf);color:var(--on-leaf);border-bottom:1px solid var(--rule-leaf)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:72px}
+.mark{display:flex;flex-direction:column;align-items:flex-start;text-decoration:none;line-height:1}
+.mark b{font:400 1.75rem/1 var(--display);letter-spacing:.14em}
+.mark small{font:600 .7rem/1 var(--sans);letter-spacing:.36em;margin-top:5px;color:var(--on-leaf-soft);padding-left:.2em}
+.nav{display:flex;align-items:center;gap:clamp(16px,2.4vw,34px)}
+.nav a{text-decoration:none;font-weight:500;font-size:.98rem;color:var(--on-leaf-soft);transition:color .2s}
+.nav a:hover{color:var(--on-leaf)}
+.nav a.btn,.nav a.btn:hover{color:var(--gold-ink)}
+.nav .tel{color:var(--on-leaf)}
+.top .btn{min-height:44px;padding:0 1.25em;font-size:.95rem}
+@media (max-width:900px){.nav a:not(.keep){display:none}}
+@media (max-width:520px){.nav .tel{display:none}.mark b{font-size:1.45rem}}
+
+/* ---------- hero ---------- */
+.hero{background:var(--leaf);color:var(--on-leaf);padding:clamp(28px,5vw,64px) 0 clamp(48px,6vw,88px);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:clamp(28px,5vw,80px);align-items:center}
+.hero h1{font-size:clamp(2.75rem,1.1rem + 4.6vw,5.6rem);line-height:.98;letter-spacing:-.025em}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero .lede{margin-top:clamp(18px,2.4vw,28px);font-size:clamp(1.08rem,1rem + .35vw,1.28rem);color:var(--on-leaf-soft);max-width:34ch;line-height:1.55}
+.hero .lede strong{color:var(--on-leaf);font-weight:600}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:clamp(24px,3vw,36px)}
+.hero-facts{margin:clamp(26px,3vw,40px) 0 0;padding:18px 0 0;border-top:1px solid var(--rule-leaf);display:grid;grid-template-columns:auto 1fr;gap:10px 16px;font-size:.98rem;color:var(--on-leaf-soft);max-width:460px}
+.hero-facts dt{color:var(--on-leaf);font-weight:600}
+.hero-facts dd{margin:0}
+.hero-facts a{color:var(--on-leaf)}
+.status-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--gold);margin-right:8px;vertical-align:.08em}
+.status-dot.closed{background:var(--on-leaf-soft)}
+
+/* the glasshouse bay: photo seen through white-painted glazing bars; fog clears pane by pane */
+.bay{position:relative;aspect-ratio:5/6;max-height:min(78vh,780px);width:100%;justify-self:end;border:9px solid var(--iron);background:var(--leaf-2);box-shadow:0 30px 60px -30px rgba(0,0,0,.55)}
+.bay>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.panes{position:absolute;inset:0;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:.62fr 1fr 1fr 1fr;pointer-events:none}
+.pane{outline:3px solid var(--iron);box-shadow:inset 0 0 0 1px rgba(19,32,26,.3),0 0 0 4px rgba(19,32,26,.14);background:rgba(232,239,230,0);-webkit-backdrop-filter:blur(0);backdrop-filter:blur(0)}
+@media (prefers-reduced-motion:no-preference){
+  .pane{animation:fog-lift 1.5s var(--ease-out) both;animation-delay:calc(.45s + var(--i) * .13s)}
+}
+@keyframes fog-lift{
+  0%{background:rgba(232,239,230,.78);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px)}
+  100%{background:rgba(232,239,230,0);-webkit-backdrop-filter:blur(0);backdrop-filter:blur(0)}
+}
+.bay-note{margin-top:14px;font-size:.9rem;color:var(--on-leaf-soft);text-align:right}
+@media (max-width:860px){
+  .hero .wrap{grid-template-columns:1fr;gap:0}
+  .hero .wrap>div{display:contents}
+  .hero h1{order:1}
+  .bay{order:2;aspect-ratio:16/10;max-height:34svh;justify-self:stretch;margin-top:22px}
+  .bay-note{order:3;text-align:left;margin-top:10px;font-size:.85rem}
+  .hero .lede{order:4;margin-top:20px}
+  .hero .cta-row{order:5;margin-top:22px}
+  .hero-facts{order:6}
+}
+@media (min-width:600px) and (max-width:860px){.bay{max-height:46svh}}
+@media (max-width:520px){
+  .bay{aspect-ratio:4/3;max-height:30svh}
+  .panes{grid-template-rows:.62fr 1fr 1fr}
+  .pane:nth-child(n+10){display:none}
+  .bay-note{display:none}
+  .hero-facts{order:5;margin-top:20px;padding-top:14px}
+  .hero .cta-row{order:6}
+}
+
+/* ---------- sections ---------- */
+section{scroll-margin-top:84px}
+.sec{padding:clamp(72px,9vw,136px) 0}
+.on-light{background:var(--glass);color:var(--ink)}
+.on-leaf{background:var(--leaf);color:var(--on-leaf)}
+.on-gold{background:var(--gold);color:var(--gold-ink)}
+.h2{font-size:clamp(2.2rem,1.2rem + 3.1vw,4rem);line-height:1.02;letter-spacing:-.02em}
+.intro{margin-top:18px;font-size:1.15rem;max-width:56ch;color:var(--ink-soft)}
+.on-leaf .intro{color:var(--on-leaf-soft)}
+.on-gold .intro{color:#3b2e08}
+.sec-head{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:24px 64px;align-items:end;margin-bottom:clamp(40px,5vw,64px)}
+@media (max-width:860px){.sec-head{grid-template-columns:1fr}}
+
+/* colour bench */
+.bench{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr);gap:clamp(28px,4vw,64px);align-items:start}
+.plate{position:sticky;top:104px;margin:0}
+.plate img{width:100%;aspect-ratio:4/5;object-fit:cover;border:9px solid var(--iron);box-shadow:0 24px 48px -28px rgba(19,32,26,.5)}
+.plate figcaption{margin-top:14px;font-size:.92rem;color:var(--ink-soft);max-width:36ch}
+.cards{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.card{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 28px;padding:22px 26px 22px 26px;background:var(--iron);border:1px solid var(--rule);transition:transform .35s var(--ease-out),box-shadow .35s var(--ease-out),border-color .35s}
+.card:hover{transform:translateY(-2px);box-shadow:0 18px 30px -22px rgba(19,32,26,.55);border-color:rgba(19,32,26,.4)}
+.card h3{font-size:clamp(1.45rem,1.1rem + .9vw,1.9rem);line-height:1.1}
+.card p{grid-column:1;color:var(--ink-soft);font-size:1rem;max-width:52ch}
+.card .meta{grid-column:1;display:flex;flex-wrap:wrap;gap:4px 18px;font-size:.92rem;color:var(--ink-soft);margin-top:4px}
+.card .meta b{color:var(--ink);font-weight:600}
+.price{grid-column:2;grid-row:1 / span 3;align-self:center;text-align:right;line-height:1}
+.price small{display:block;font:500 .82rem/1 var(--sans);color:var(--ink-soft);margin-bottom:6px}
+.price span{font:400 clamp(2rem,1.4rem + 1.4vw,2.6rem)/1 var(--display);letter-spacing:-.02em}
+.card a.stretch{position:absolute;inset:0;z-index:1}
+.card a.stretch:focus-visible{outline-offset:-3px}
+.bench-foot{margin-top:22px;display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;justify-content:space-between;font-size:.95rem;color:var(--ink-soft)}
+.bench-foot a{font-weight:600;color:var(--ink)}
+@media (max-width:860px){.bench{grid-template-columns:1fr}.plate{position:relative;top:0}.plate img{aspect-ratio:16/10}}
+@media (max-width:560px){.card{grid-template-columns:1fr;padding:20px}.price{grid-column:1;grid-row:auto;text-align:left;display:flex;align-items:baseline;gap:8px;margin-top:8px}.price small{margin:0}}
+
+/* what's in the package */
+.stages{margin-top:clamp(72px,8vw,120px);padding-top:clamp(40px,5vw,64px);border-top:1px solid var(--rule)}
+.stages ol{list-style:none;margin:clamp(32px,4vw,48px) 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(18px,2.6vw,36px);counter-reset:s}
+.stages li{counter-increment:s}
+.stages img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.stages li:nth-child(2){margin-top:clamp(0px,5vw,72px)}
+.stages li:nth-child(3){margin-top:clamp(0px,2.5vw,36px)}
+.stages h3{margin-top:18px;font-size:1.6rem;display:flex;gap:12px;align-items:baseline}
+.stages h3::before{content:counter(s);font:600 .95rem/1 var(--sans);color:var(--gold-deep);min-width:1ch}
+.stages p{margin-top:8px;color:var(--ink-soft);max-width:36ch}
+@media (max-width:760px){.stages ol{grid-template-columns:1fr}.stages li:nth-child(n){margin-top:0}.stages img{aspect-ratio:16/11}}
+
+/* entry offers on gold */
+.ways{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(36px,5vw,80px);align-items:start}
+.test-strip{background:var(--ink);color:var(--iron);padding:clamp(28px,3.4vw,44px)}
+.test-strip .big{font:400 clamp(4.2rem,3rem + 4vw,7rem)/.9 var(--display);letter-spacing:-.03em;color:var(--gold)}
+.test-strip h3{font-size:clamp(1.6rem,1.3rem + .9vw,2.1rem);margin-top:16px}
+.test-strip p{margin-top:12px;color:#c9d3cb;max-width:40ch}
+.test-strip .btn{margin-top:26px}
+.appr h3{font-size:clamp(1.6rem,1.3rem + .9vw,2.1rem)}
+.appr > p{margin-top:10px;max-width:52ch;color:#3b2e08}
+.tags{list-style:none;margin:24px 0 0;padding:0;border-top:1.5px solid var(--gold-ink)}
+.tags li{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:4px 22px;align-items:baseline;padding:14px 0;border-bottom:1px solid rgba(29,22,3,.28)}
+.tags b{font-weight:600;font-size:1.05rem}
+.tags small{display:block;font-size:.9rem;color:#4a3a0c;font-weight:400}
+.tags .d{font-size:.92rem;color:#4a3a0c}
+.tags .p{font:400 1.6rem/1 var(--display)}
+.appr .note{margin-top:16px;font-size:.92rem;color:#4a3a0c}
+.appr .btn{margin-top:24px}
+@media (max-width:860px){.ways{grid-template-columns:1fr}}
+@media (max-width:480px){.tags li{grid-template-columns:minmax(0,1fr) auto}.tags .d{grid-column:1;grid-row:2}.tags .p{grid-row:1 / span 2;grid-column:2;align-self:center}}
+
+/* care on leaf */
+.care{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,5vw,88px);align-items:center}
+.care figure{margin:0}
+.care img{width:100%;aspect-ratio:4/5;object-fit:cover;border:9px solid var(--iron)}
+.care ul{list-style:none;margin:32px 0 0;padding:0}
+.care li{padding:20px 0;border-top:1px solid var(--rule-leaf);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 24px}
+.care li:last-child{border-bottom:1px solid var(--rule-leaf)}
+.care h3{font-size:1.55rem;line-height:1.15}
+.care li p{grid-column:1;color:var(--on-leaf-soft);font-size:.98rem;max-width:48ch}
+.care .p{grid-column:2;grid-row:1 / span 2;font:400 1.9rem/1 var(--display);color:var(--gold);text-align:right}
+.care .p small{display:block;font:500 .82rem/1.3 var(--sans);color:var(--on-leaf-soft);margin-top:6px}
+@media (max-width:860px){.care{grid-template-columns:1fr}.care figure{order:2}.care img{aspect-ratio:16/11}}
+
+/* full price list */
+.jump{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:36px}
+.jump a{font-size:.92rem;font-weight:500;text-decoration:none;padding:8px 14px;border:1px solid var(--rule);border-radius:999px;background:var(--iron);transition:border-color .2s,background-color .2s}
+.jump a:hover{border-color:var(--ink)}
+.menu{columns:2 420px;column-gap:clamp(32px,5vw,72px)}
+.menu details{break-inside:avoid;margin:0 0 30px;scroll-margin-top:96px}
+.menu summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:0 0 10px;border-bottom:1.5px solid var(--ink)}
+.menu summary::-webkit-details-marker{display:none}
+.menu summary h3{font-size:1.7rem}
+.menu summary .chev{width:18px;height:18px;flex:none;transition:transform .3s var(--ease-out)}
+.menu details[open] .chev{transform:rotate(180deg)}
+.menu table{width:100%;border-collapse:collapse;font-size:.98rem}
+.menu td,.menu th{padding:11px 0;border-bottom:1px solid var(--rule);vertical-align:top;text-align:left;font-weight:400}
+.menu th{padding-right:12px}
+.menu th span{display:block;font-size:.88rem;color:var(--ink-soft);margin-top:2px}
+.menu td.d{color:var(--ink-soft);white-space:nowrap;padding-right:14px;font-size:.92rem}
+.menu td.p{text-align:right;white-space:nowrap;font-weight:600}
+.menu .fine{font-size:.88rem;color:var(--ink-soft);margin-top:10px}
+.menu-foot{margin-top:18px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.menu-foot p{font-size:.95rem;color:var(--ink-soft);max-width:60ch}
+
+/* team & words */
+.team{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.4vw,28px)}
+.person{border-top:1.5px solid var(--ink);padding-top:18px}
+.person h3{font-size:clamp(1.8rem,1.4rem + 1vw,2.4rem)}
+.person .role{font-weight:600;margin-top:4px}
+.person p.bio{margin-top:12px;color:var(--ink-soft);font-size:.98rem}
+.ph{display:inline-block;font:700 .7rem/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;background:var(--ink);color:var(--gold);padding:5px 8px;margin-bottom:10px}
+.person .btn{margin-top:18px;min-height:44px;font-size:.92rem}
+.words{margin-top:clamp(56px,7vw,96px);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.4vw,28px)}
+.words blockquote{margin:0;padding:26px;background:var(--iron);border:1px dashed rgba(19,32,26,.45)}
+.words blockquote p{font:400 1.35rem/1.3 var(--display)}
+.words cite{display:block;margin-top:14px;font-style:normal;font-size:.9rem;color:var(--ink-soft)}
+@media (max-width:860px){.team,.words{grid-template-columns:1fr}}
+
+/* weddings */
+.wed{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(36px,5vw,88px);align-items:center}
+.wed img{width:100%;aspect-ratio:1/1;object-fit:cover;border:9px solid var(--iron)}
+.wed dl{margin:30px 0 0;display:grid;grid-template-columns:minmax(0,1fr) auto;border-top:1px solid var(--rule-leaf)}
+.wed dt,.wed dd{padding:16px 0;border-bottom:1px solid var(--rule-leaf);margin:0}
+.wed dt{font-weight:600}
+.wed dt span{display:block;font-weight:400;color:var(--on-leaf-soft);font-size:.93rem}
+.wed dd{text-align:right;font:400 1.7rem/1.1 var(--display);color:var(--gold)}
+.wed .cta-row{margin-top:30px}
+@media (max-width:860px){.wed{grid-template-columns:1fr}.wed img{aspect-ratio:16/11}}
+
+/* visit */
+.visit{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,.9fr);gap:clamp(28px,4vw,64px);align-items:start}
+.visit address{font-style:normal;font-size:1.2rem;line-height:1.5}
+.visit address b{display:block;font:400 2rem/1.1 var(--display);margin-bottom:10px}
+.visit .links{margin-top:22px;display:grid;gap:10px;font-weight:500}
+.visit .links a{display:inline-flex;align-items:center;gap:10px;text-decoration:none}
+.visit .links a:hover span{text-decoration:underline}
+.visit .links svg{width:18px;height:18px;flex:none}
+.hours{width:100%;border-collapse:collapse;font-size:1.02rem}
+.hours caption{text-align:left;font:400 2rem/1.1 var(--display);margin-bottom:10px}
+.hours th,.hours td{padding:10px 12px;border-bottom:1px solid var(--rule);text-align:left;font-weight:400}
+.hours td{text-align:right}
+.hours tr.today{background:var(--ink);color:var(--iron)}
+.hours tr.today th{font-weight:600}
+.hours tr.today th::after{content:" · today";color:var(--gold);font-weight:500}
+.hours .late td{font-weight:600}
+.shelf{margin:0}
+.shelf img{width:100%;aspect-ratio:3/4;object-fit:cover;border:9px solid var(--iron)}
+.shelf figcaption{margin-top:12px;font-size:.92rem;color:var(--ink-soft)}
+@media (max-width:1000px){.visit{grid-template-columns:1fr 1fr}.shelf{grid-column:1 / -1}.shelf img{aspect-ratio:16/10}}
+@media (max-width:640px){.visit{grid-template-columns:1fr}}
+
+/* close */
+.close{padding:clamp(80px,10vw,150px) 0}
+.close .wrap{display:grid;grid-template-columns:minmax(0,1.3fr) auto;gap:32px 64px;align-items:end}
+.close h2{font-size:clamp(2.6rem,1.3rem + 4.4vw,5.4rem);line-height:.98;letter-spacing:-.025em}
+.close p{margin-top:18px;font-size:1.18rem;color:#3b2e08;max-width:44ch}
+.close .cta-row{margin-top:0;justify-content:flex-end}
+.close .btn-line:hover{background:rgba(29,22,3,.08)}
+@media (max-width:860px){.close .wrap{grid-template-columns:1fr}.close .cta-row{justify-content:flex-start}}
+
+/* footer */
+footer{background:var(--leaf);color:var(--on-leaf-soft);padding:56px 0 40px;font-size:.95rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:24px 56px;justify-content:space-between;align-items:flex-start}
+footer .mark b{color:var(--on-leaf)}
+footer nav{display:flex;flex-wrap:wrap;gap:12px 28px}
+footer a{color:var(--on-leaf);text-decoration:none}
+footer a:hover{text-decoration:underline}
+footer .fine{flex-basis:100%;border-top:1px solid var(--rule-leaf);padding-top:20px;font-size:.85rem}
+
+/* mobile book bar */
+.bar{display:none}
+@media (max-width:720px){
+  body{padding-bottom:calc(var(--bar) + 20px + env(safe-area-inset-bottom))}
+  .bar{display:grid;grid-template-columns:1.35fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--leaf);border-top:1px solid var(--rule-leaf);box-shadow:0 -12px 24px -16px rgba(0,0,0,.5)}
+  .bar .btn{min-height:var(--bar);width:100%}
+  .bar .btn-line{color:var(--on-leaf)}
+  .top .btn{display:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="Odyssey Ballarat Salon, home"><b>ODYSSEY</b><small>BALLARAT SALON</small></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#colour">Colour</a>
+      <a href="#prices">Prices</a>
+      <a href="#weddings">Weddings</a>
+      <a href="#visit">Visit</a>
+      <a class="tel keep" href="tel:+61404186534">0404 186 534</a>
+      <a class="btn btn-gold keep" href="https://odyssey-ballarat-salon.square.site/s/appointments">Book online</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="wrap">
+    <div>
+      <h1 id="hero-title">Colour worth coming out of the <em>fog</em> for.</h1>
+      <p class="lede">Blonde, balayage and colour correction at <strong>501A Main Rd, Golden Point</strong>. Your haircut and blowave are included in every colour package.</p>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="https://odyssey-ballarat-salon.square.site/s/appointments">Book online
+          <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5"/></svg></a>
+        <a class="btn btn-line" href="tel:+61404186534">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6.2 2.8 8 6.6 6.5 8.1a10 10 0 0 0 5.4 5.4l1.5-1.5 3.8 1.8-.6 2.9c-.1.5-.6.9-1.1.9A13.4 13.4 0 0 1 2.4 4.5c0-.5.4-1 .9-1.1z"/></svg>
+          Call 0404 186 534</a>
+      </div>
+      <dl class="hero-facts">
+        <dt>Today</dt><dd id="today-status"><span class="status-dot" aria-hidden="true"></span>Wed 9–5 · Thu 9:30–8:30 · Fri 9–5 · Sat 8:30–3:30</dd>
+        <dt>Unsure?</dt><dd>Start with a <a href="#start">$10 colour consultation</a>.</dd>
+      </dl>
+    </div>
+    <div>
+      <div class="bay">
+        <img src="https://images.unsplash.com/photo-1554519934-e32b1629d9ee?w=1100&q=72&auto=format" srcset="https://images.unsplash.com/photo-1554519934-e32b1629d9ee?w=700&q=72&auto=format 700w, https://images.unsplash.com/photo-1554519934-e32b1629d9ee?w=1100&q=72&auto=format 1100w, https://images.unsplash.com/photo-1554519934-e32b1629d9ee?w=1500&q=70&auto=format 1500w" sizes="(max-width:860px) 92vw, 50vw" alt="Long, dimensional blonde hair with soft waves, seen from behind in a salon." width="1100" height="1650" fetchpriority="high">
+        <div class="panes" aria-hidden="true">
+          <i class="pane" style="--i:5"></i><i class="pane" style="--i:3"></i><i class="pane" style="--i:6"></i>
+          <i class="pane" style="--i:2"></i><i class="pane" style="--i:0"></i><i class="pane" style="--i:4"></i>
+          <i class="pane" style="--i:7"></i><i class="pane" style="--i:1"></i><i class="pane" style="--i:8"></i>
+          <i class="pane" style="--i:10"></i><i class="pane" style="--i:9"></i><i class="pane" style="--i:11"></i>
+        </div>
+      </div>
+      <p class="bay-note">Olaplex is built into our blonde and correction packages.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec on-light" id="colour" aria-labelledby="colour-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="h2" id="colour-title">Blondes, balayage and the colour in between.</h2>
+      <p class="intro">Every package below leaves with a gloss toner, haircut and blowave. The price you see is where it starts, not a teaser.</p>
+    </div>
+    <div class="bench">
+      <figure class="plate">
+        <img src="https://images.unsplash.com/photo-1725369865470-e7e2395619f5?w=900&q=72&auto=format" alt="A golden-yellow begonia in full bloom against broad green leaves." width="900" height="1350" loading="lazy">
+        <figcaption>Ballarat is the Begonia City, and Golden Point was named for gold.</figcaption>
+      </figure>
+      <div>
+        <ul class="cards">
+          <li class="card">
+            <h3>Fullhead Balayage</h3>
+            <p>Brushed-on highlights that blend with your natural tones, for colour that grows out soft and low-maintenance.</p>
+            <div class="meta"><span><b>2 hr 40 min</b></span><span>With root tint: from $360</span></div>
+            <div class="price"><small>from</small><span>$335</span></div>
+            <a class="stretch" href="https://odyssey-ballarat-salon.square.site/s/appointments"><span class="vh">Book Fullhead Balayage</span></a>
+          </li>
+          <li class="card">
+            <h3>Balayage Re-fresh</h3>
+            <p>For balayage you already love that's lost its brightness. We refresh the existing highlights.</p>
+            <div class="meta"><span><b>2 hr 20 min</b></span></div>
+            <div class="price"><small>from</small><span>$285</span></div>
+            <a class="stretch" href="https://odyssey-ballarat-salon.square.site/s/appointments"><span class="vh">Book Balayage Re-fresh</span></a>
+          </li>
+          <li class="card">
+            <h3>Fullhead Highlights</h3>
+            <p>Foils across the whole head. Choose roots only for regrowth, or roots to ends for extra-large regrowth.</p>
+            <div class="meta"><span><b>2 hr 40 min+</b></span><span>Roots to ends: from $335</span></div>
+            <div class="price"><small>from</small><span>$300</span></div>
+            <a class="stretch" href="https://odyssey-ballarat-salon.square.site/s/appointments"><span class="vh">Book Fullhead Highlights</span></a>
+          </li>
+          <li class="card">
+            <h3>Deluxe Blonde Package</h3>
+            <p>Fullhead highlights roots to ends, tip-outs or a basin clean-out, Olaplex in the colour and at the basin, and a root toner if you need it.</p>
+            <div class="meta"><span><b>3 hr 40 min</b></span></div>
+            <div class="price"><small>from</small><span>$399</span></div>
+            <a class="stretch" href="https://odyssey-ballarat-salon.square.site/s/appointments"><span class="vh">Book Deluxe Blonde Package</span></a>
+          </li>
+          <li class="card">
+            <h3>Blonde Colour Correction</h3>
+            <p>Fix-ups and major clean-outs, with your hair's health as the top priority. Custom colour, gloss toning and Olaplex.</p>
+            <div class="meta"><span><b>4 hr</b></span></div>
+            <div class="price"><small>from</small><span>$415</span></div>
+            <a class="stretch" href="https://odyssey-ballarat-salon.square.site/s/appointments"><span class="vh">Book Blonde Colour Correction</span></a>
+          </li>
+          <li class="card">
+            <h3>Grey Blending Package</h3>
+            <p>Highlights and lowlights to blend with your natural greys, so you can stop colouring so often. First time? Book a consultation first.</p>
+            <div class="meta"><span><b>2 hr 50 min</b></span></div>
+            <div class="price"><small>from</small><span>$360</span></div>
+            <a class="stretch" href="https://odyssey-ballarat-salon.square.site/s/appointments"><span class="vh">Book Grey Blending Package</span></a>
+          </li>
+        </ul>
+        <div class="bench-foot">
+          <span>Extra cost may apply for roots-to-ends application or extra product.</span>
+          <a href="#prices">Half head, face-frame, tints and toners <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" style="width:16px;height:16px;vertical-align:-3px"><path d="M4 10h11M11 5.5 15.5 10 11 14.5"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="stages">
+      <div class="sec-head" style="margin-bottom:0">
+        <h2 class="h2">One booking, the whole finish.</h2>
+        <p class="intro">One booking covers the colour, the cut and the blowave.</p>
+      </div>
+      <ol>
+        <li>
+          <img src="https://images.unsplash.com/photo-1707979577466-2d6109c68a45?w=800&q=70&auto=format" alt="A colourist in gloves sectioning and applying colour to a client's hair." width="800" height="1000" loading="lazy">
+          <h3>Colour</h3>
+          <p>Foils, balayage or tint, mixed for you. Olaplex goes into our blonde and correction work.</p>
+        </li>
+        <li>
+          <img src="https://images.unsplash.com/photo-1785456283212-338f5bc44d50?w=800&q=70&auto=format" alt="Two heads of long, wavy hair in toned blonde shades." width="800" height="1000" loading="lazy">
+          <h3>Gloss toner</h3>
+          <p>Included in highlight, balayage and blonde packages, so the colour leaves clean and bright.</p>
+        </li>
+        <li>
+          <img src="https://images.unsplash.com/photo-1734111719430-fe4a3973f8af?w=800&q=70&auto=format" alt="A stylist blow-drying long blonde hair with a round brush." width="800" height="1000" loading="lazy">
+          <h3>Cut, blowave &amp; style</h3>
+          <p>Every colour package finishes with a haircut and blowave. You walk out done.</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="sec on-gold" id="start" aria-labelledby="start-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="h2" id="start-title">Two easy ways in.</h2>
+      <p class="intro">Not ready for a four-hour colour? Test the water first.</p>
+    </div>
+    <div class="ways">
+      <div class="test-strip">
+        <div class="big">$10</div>
+        <h3>Hair consultation</h3>
+        <p>Ten minutes before any colour service. We look at your hair and work out which service will suit it best. We recommend it before your first grey blending.</p>
+        <a class="btn btn-gold" href="https://odyssey-ballarat-salon.square.site/s/appointments">Book a consultation</a>
+      </div>
+      <div class="appr">
+        <h3>Apprentice specials</h3>
+        <p>Real salon services at a gentler price, done by our apprentice. Only bookable with the apprentice.</p>
+        <ul class="tags">
+          <li><div><b>Blowave special</b><small>Wash, head massage, blowave and heat styling</small></div><span class="d">45 min</span><span class="p">$30</span></li>
+          <li><div><b>Haircut special</b><small>Basic length cut only, no layers or face-framing yet</small></div><span class="d">1 hr 5 min</span><span class="p">$50</span></li>
+          <li><div><b>Event styling special</b><small>Up-styles or down-styles</small></div><span class="d">1 hr</span><span class="p">$69</span></li>
+          <li><div><b>Half head highlights special</b><small>Toner, blowave, basin treatment, head massage, basic trim</small></div><span class="d">2 hr 55 min+</span><span class="p">$200+</span></li>
+          <li><div><b>Balayage highlights special</b><small>Refresh or fullhead, toner, blowave, basin treatment, basic trim</small></div><span class="d">3 hr 15 min+</span><span class="p">$240+</span></li>
+          <li><div><b>Fullhead highlights special</b><small>Toner, blowave, basin treatment, head massage, basic trim</small></div><span class="d">3 hr 40 min+</span><span class="p">$245+</span></li>
+        </ul>
+        <p class="note">Apprentices are still building confidence, so a senior stylist may step in to help on event styling.</p>
+        <a class="btn btn-ink" href="https://odyssey-ballarat-salon.square.site/s/appointments">Book an apprentice special</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec on-light" id="prices" aria-labelledby="prices-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="h2" id="prices-title">The full price list.</h2>
+      <p class="intro">Straight from our booking system. A "+" means the price or time can go up with hair length, density or extra product.</p>
+    </div>
+    <nav class="jump" aria-label="Price list sections">
+      <a href="#p-colour">Colour</a><a href="#p-toner">Toner</a><a href="#p-cuts">Haircuts</a><a href="#p-style">Styling</a><a href="#p-treat">Treatments</a><a href="#p-keratin">Keratin</a><a href="#p-addons">Add-ons</a><a href="#p-consult">Consult &amp; bridal</a>
+    </nav>
+    <div class="menu">
+      <details id="p-colour" open>
+        <summary><h3>Colour</h3><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m5 8 5 5 5-5"/></svg></summary>
+        <table>
+          <tr><th>Blonde Colour Correction<span>Custom colour, gloss toning, Olaplex, cut, blowave</span></th><td class="d">4 hr</td><td class="p">from $415</td></tr>
+          <tr><th>Deluxe Blonde Package<span>Roots-to-ends highlights, Olaplex, toner, cut, blowave</span></th><td class="d">3 hr 40 min</td><td class="p">from $399</td></tr>
+          <tr><th>Grey Blending Package<span>Highlights/lowlights, toner, cut, blowave</span></th><td class="d">2 hr 50 min</td><td class="p">from $360</td></tr>
+          <tr><th>Fullhead Balayage + Root Tint</th><td class="d">3 hr 5 min</td><td class="p">from $360</td></tr>
+          <tr><th>Fullhead Balayage</th><td class="d">2 hr 40 min</td><td class="p">from $335</td></tr>
+          <tr><th>Fullhead Highlights<span>Roots only from $300 · roots to ends from $335</span></th><td class="d">2 hr 40 min+</td><td class="p">from $300</td></tr>
+          <tr><th>Balayage Re-fresh</th><td class="d">2 hr 20 min</td><td class="p">from $285</td></tr>
+          <tr><th>Regrowth Tint &amp; Highlights<span>Regular from $275 · extra foils or roots-to-ends tint from $290</span></th><td class="d">2 hr 30 min+</td><td class="p">from $275</td></tr>
+          <tr><th>Half Head Highlights<span>Roots only from $250 · roots to ends from $270</span></th><td class="d">2 hr 15 min+</td><td class="p">from $250</td></tr>
+          <tr><th>Face-frame / Scattered Highlights<span>¼ head, a subtle touch-up between colours</span></th><td class="d">2 hr</td><td class="p">from $200</td></tr>
+          <tr><th>Solid Tint<span>Roots only from $190 · roots to ends from $210</span></th><td class="d">2 hr+</td><td class="p">from $190</td></tr>
+        </table>
+        <p class="fine">Colour packages include the haircut, blowave &amp; style; highlight and balayage packages also include the toner. Extra cost may apply for roots-to-ends application or extra product.</p>
+      </details>
+      <details id="p-toner" open>
+        <summary><h3>Toner</h3><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m5 8 5 5 5-5"/></svg></summary>
+        <table>
+          <tr><th>Basin Balayage + Toner<span>Lifts already-lightened mid-lengths and ends, with gloss toner and a haircut</span></th><td class="d">1 hr 45 min</td><td class="p">from $195</td></tr>
+          <tr><th>Gloss Toner<span>Toner, haircut, blowave &amp; style</span></th><td class="d">1 hr+</td><td class="p">$135+</td></tr>
+        </table>
+      </details>
+      <details id="p-cuts" open>
+        <summary><h3>Haircuts</h3><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m5 8 5 5 5-5"/></svg></summary>
+        <table>
+          <tr><th>Womens re-style haircut<span>Includes wash &amp; style</span></th><td class="d">1 hr</td><td class="p">$100</td></tr>
+          <tr><th>Womens haircut<span>Includes wash &amp; style</span></th><td class="d">45 min</td><td class="p">$85</td></tr>
+          <tr><th>Teen girls haircut<span>12–17 years</span></th><td class="d">40 min+</td><td class="p">$55+</td></tr>
+          <tr><th>Mens haircut</th><td class="d">30 min</td><td class="p">$42</td></tr>
+          <tr><th>Teen boys haircut<span>12–17 years</span></th><td class="d">30 min</td><td class="p">$37</td></tr>
+          <tr><th>Kids haircut<span>Under 12</span></th><td class="d">30 min</td><td class="p">$36</td></tr>
+          <tr><th>Fringe re-shape</th><td class="d">15 min</td><td class="p">$20</td></tr>
+          <tr><th>Fringe trim</th><td class="d">10 min</td><td class="p">$10</td></tr>
+        </table>
+      </details>
+      <details id="p-style" open>
+        <summary><h3>Styling</h3><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m5 8 5 5 5-5"/></svg></summary>
+        <table>
+          <tr><th>Event hair styling<span>No wash included. Wash your hair 24 hrs before.</span></th><td class="d">1 hr</td><td class="p">$90+</td></tr>
+          <tr><th>Blow wave<span>Includes a wash at the basin</span></th><td class="d">45 min</td><td class="p">$75+</td></tr>
+          <tr><th>Basic dry styling<span>No wash, glam waves, pins or braids</span></th><td class="d">30 min</td><td class="p">$50</td></tr>
+          <tr><th>Hair braiding</th><td class="d">15 min+</td><td class="p">$20+</td></tr>
+        </table>
+      </details>
+      <details id="p-treat" open>
+        <summary><h3>Treatment + style</h3><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m5 8 5 5 5-5"/></svg></summary>
+        <table>
+          <tr><th>Deluxe Olaplex Treatment<span>No.1 &amp; No.2 at the basin, head massage, blowave</span></th><td class="d">1 hr</td><td class="p">$165</td></tr>
+          <tr><th>Scalp Detox + Blowave<span>EVO exfoliation, double cleanse, Top Drop, head massage</span></th><td class="d">1 hr</td><td class="p">$135</td></tr>
+          <tr><th>Curly Girly Treatment &amp; Blowave<span>Curl cleanse, curl treatment, head massage, diffuse</span></th><td class="d">1 hr</td><td class="p">$80</td></tr>
+        </table>
+        <p class="fine">Add a haircut to the Olaplex or Scalp Detox for an extra cost.</p>
+      </details>
+      <details id="p-keratin" open>
+        <summary><h3>Keratin smoothing</h3><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m5 8 5 5 5-5"/></svg></summary>
+        <table>
+          <tr><th>Cezanne Keratin Smoothing Treatment Classic<span>Softer, smoother, easier to control. Results last up to 5 months.</span></th><td class="d">2 hr+</td><td class="p">$330+</td></tr>
+        </table>
+      </details>
+      <details id="p-addons" open>
+        <summary><h3>Basin add-ons</h3><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m5 8 5 5 5-5"/></svg></summary>
+        <table>
+          <tr><th>Olaplex 2-step treatment<span>With a colour service</span></th><td class="d">20 min</td><td class="p">$60</td></tr>
+          <tr><th>EVO Top Drop: Scalp</th><td class="d">5 min</td><td class="p">$40</td></tr>
+          <tr><th>EVO Top Drop: Hydrate</th><td class="d">5 min</td><td class="p">$40</td></tr>
+          <tr><th>EVO Top Drop: Repair</th><td class="d">5 min</td><td class="p">$40</td></tr>
+          <tr><th>Schwarzkopf bonding repair mask</th><td class="d">5 min</td><td class="p">$35</td></tr>
+        </table>
+      </details>
+      <details id="p-consult" open>
+        <summary><h3>Consultation &amp; bridal</h3><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m5 8 5 5 5-5"/></svg></summary>
+        <table>
+          <tr><th>Bridal trial<span>No wash included. Wash your hair at least 24 hrs before.</span></th><td class="d">1 hr 15 min</td><td class="p">$125</td></tr>
+          <tr><th>Hair consultation<span>For any colour service</span></th><td class="d">10 min</td><td class="p">$10</td></tr>
+        </table>
+      </details>
+    </div>
+    <div class="menu-foot on-light">
+      <p>Apprentice specials are listed <a href="#start">above</a>. Pick your service and stylist when you book.</p>
+      <a class="btn btn-ink" href="https://odyssey-ballarat-salon.square.site/s/appointments">Book online</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec on-leaf" id="care" aria-labelledby="care-title">
+  <div class="wrap care">
+    <figure>
+      <img src="https://images.unsplash.com/photo-1611590027211-b954fd027b51?w=900&q=70&auto=format" alt="A woman with long, natural dark curls, photographed against a warm wall." width="900" height="1125" loading="lazy">
+    </figure>
+    <div>
+      <h2 class="h2" id="care-title">For hair that's been through a Ballarat winter.</h2>
+      <p class="intro">Basin treatments that finish with a blowave, for hair that needs rescuing, not just styling.</p>
+      <ul>
+        <li><h3>Deluxe Olaplex Treatment</h3><p>Olaplex No.1 and No.2 at the basin to help repair broken bonds, a deluxe head massage, No.4 and No.5 to finish, then a blowave.</p><span class="p">$165<small>1 hr</small></span></li>
+        <li><h3>Scalp Detox + Blowave</h3><p>EVO scalp exfoliator and scrub brush, a double cleanse, Top Drop scalp treatment and a cooling head massage.</p><span class="p">$135<small>1 hr</small></span></li>
+        <li><h3>Curly Girly Treatment &amp; Blowave</h3><p>A curl-specific cleanse that won't strip colour or natural oils, a curl treatment, head massage and a diffuse to let your curl form.</p><span class="p">$80<small>1 hr</small></span></li>
+        <li><h3>Cezanne Keratin Smoothing</h3><p>Softer, smoother, easier-to-control hair, with results that last up to five months.</p><span class="p">$330+<small>2 hr+</small></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec on-light" id="team" aria-labelledby="team-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="h2" id="team-title">Brooke and her team.</h2>
+      <p class="intro">Odyssey by B is owner-run by Brooke, with junior stylists Heleana and Makita. Choose your stylist when you book.</p>
+    </div>
+    <div class="team">
+      <article class="person">
+        <h3>Brooke</h3>
+        <p class="role">Owner</p>
+        <p class="bio"><span class="ph">Placeholder bio</span><br>Brooke to supply two lines: specialities, years behind the chair, what she loves doing most.</p>
+        <a class="btn btn-line" href="https://odyssey-ballarat-salon.square.site/s/appointments">Book with Brooke</a>
+      </article>
+      <article class="person">
+        <h3>Heleana</h3>
+        <p class="role">Junior Stylist</p>
+        <p class="bio"><span class="ph">Placeholder bio</span><br>Heleana to supply two lines about her favourite services and style.</p>
+        <a class="btn btn-line" href="https://odyssey-ballarat-salon.square.site/s/appointments">Book with Heleana</a>
+      </article>
+      <article class="person">
+        <h3>Makita</h3>
+        <p class="role">Junior Stylist</p>
+        <p class="bio"><span class="ph">Placeholder bio</span><br>Makita to supply two lines about her favourite services and style.</p>
+        <a class="btn btn-line" href="https://odyssey-ballarat-salon.square.site/s/appointments">Book with Makita</a>
+      </article>
+    </div>
+    <div class="words" aria-label="Client reviews (placeholders)">
+      <blockquote><span class="ph">Placeholder review</span><p>“Replace with a real Google review from a blonde or balayage client.”</p><cite>Client name, service</cite></blockquote>
+      <blockquote><span class="ph">Placeholder review</span><p>“Replace with a real review that mentions the team or the salon.”</p><cite>Client name, service</cite></blockquote>
+      <blockquote><span class="ph">Placeholder review</span><p>“Replace with a real review from a bride or event client.”</p><cite>Client name, service</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="sec on-leaf" id="weddings" aria-labelledby="wed-title">
+  <div class="wrap wed">
+    <div>
+      <h2 class="h2" id="wed-title">Wedding hair, planned before the day.</h2>
+      <p class="intro">Book a trial to lock in the look, then send us your date. We reply with a formal quote within 14 business days.</p>
+      <dl>
+        <dt>Bridal trial<span>1 hr 15 min · wash your hair at least 24 hrs before</span></dt><dd>$125</dd>
+        <dt>Event hair styling<span>1 hr · up-styles and down-styles</span></dt><dd>$90+</dd>
+        <dt>Event styling, apprentice special<span>1 hr</span></dt><dd>$69</dd>
+      </dl>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="https://odyssey-ballarat-salon.square.site/weddingenquiries">Make a wedding enquiry</a>
+        <a class="btn btn-line" href="https://odyssey-ballarat-salon.square.site/s/appointments">Book a bridal trial</a>
+      </div>
+    </div>
+    <figure style="margin:0">
+      <img src="https://images.unsplash.com/photo-1623428455512-264b33ca8cec?w=1000&q=70&auto=format" alt="A bride's braided low updo with a pearl and crystal hair comb and a sheer veil." width="1000" height="1500" loading="lazy">
+    </figure>
+  </div>
+</section>
+
+<section class="sec on-light" id="visit" aria-labelledby="visit-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="h2" id="visit-title">Find us on Main Rd, Golden Point.</h2>
+      <p class="intro">Just down the hill from Sovereign Hill, in the gold-rush heart of Ballarat.</p>
+    </div>
+    <div class="visit">
+      <div>
+        <address><b>Odyssey Ballarat Salon</b>501A Main Rd<br>Golden Point VIC 3350</address>
+        <div class="links">
+          <a href="https://www.google.com/maps/dir/?api=1&amp;destination=501A+Main+Rd+Golden+Point+VIC+3350"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M10 18s6-5.4 6-10a6 6 0 1 0-12 0c0 4.6 6 10 6 10z"/><circle cx="10" cy="8" r="2.2"/></svg><span>Get directions</span></a>
+          <a href="tel:+61404186534"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6.2 2.8 8 6.6 6.5 8.1a10 10 0 0 0 5.4 5.4l1.5-1.5 3.8 1.8-.6 2.9c-.1.5-.6.9-1.1.9A13.4 13.4 0 0 1 2.4 4.5c0-.5.4-1 .9-1.1z"/></svg><span>0404 186 534</span></a>
+          <a href="mailto:odysseybyb@outlook.com"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2.5" y="4.5" width="15" height="11" rx="1"/><path d="m3 5 7 6 7-6"/></svg><span>odysseybyb@outlook.com</span></a>
+          <a href="https://www.instagram.com/odysseybyb"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="14" height="14" rx="4"/><circle cx="10" cy="10" r="3.2"/><circle cx="14.2" cy="5.8" r=".6" fill="currentColor"/></svg><span>@odysseybyb on Instagram</span></a>
+          <a href="https://www.facebook.com/odysseybyb"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M11.5 17.5v-6.5h2.3l.4-2.7h-2.7V6.6c0-.8.3-1.3 1.4-1.3h1.4V2.9a17 17 0 0 0-2.1-.1c-2 0-3.4 1.2-3.4 3.5v2h-2.3V11h2.3v6.5"/></svg><span>Odyssey by B on Facebook</span></a>
+          <a href="https://odyssey-ballarat-salon.square.site/s/gift-cards"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2.5" y="7" width="15" height="10" rx="1"/><path d="M2.5 10.5h15M10 7v10M10 7C8.5 4 5.5 4 6 6c.3 1 4 1 4 1s3.7 0 4-1c.5-2-2.5-2-4 1"/></svg><span>Buy a gift card</span></a>
+        </div>
+      </div>
+      <table class="hours" id="hours">
+        <caption>Opening hours</caption>
+        <tbody>
+          <tr data-day="1"><th scope="row">Monday</th><td>Closed</td></tr>
+          <tr data-day="2"><th scope="row">Tuesday</th><td>Closed</td></tr>
+          <tr data-day="3"><th scope="row">Wednesday</th><td>9:00 am – 5:00 pm</td></tr>
+          <tr data-day="4" class="late"><th scope="row">Thursday</th><td>9:30 am – 8:30 pm</td></tr>
+          <tr data-day="5"><th scope="row">Friday</th><td>9:00 am – 5:00 pm</td></tr>
+          <tr data-day="6"><th scope="row">Saturday</th><td>8:30 am – 3:30 pm</td></tr>
+          <tr data-day="0"><th scope="row">Sunday</th><td>Closed</td></tr>
+        </tbody>
+      </table>
+      <figure class="shelf">
+        <img src="https://9701bd53683e0d78e1e2.cdn6.editmysite.com/uploads/b/9701bd53683e0d78e1e2161f68497c182396bcede4739bf98b935e0b434b317b/IMG_1613_1718950987.JPG?width=1000&amp;optimize=medium" alt="EVO hair products lined up on a white recessed shelf inside the salon." width="1000" height="1500" loading="lazy">
+        <figcaption>The EVO shelf at 501A Main Rd.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="close on-gold" aria-labelledby="close-title">
+  <div class="wrap">
+    <div>
+      <h2 id="close-title">Thursdays, we're open till 8:30.</h2>
+      <p>Colour after work, a blowave before the weekend. Pick your service, stylist and time online.</p>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-ink" href="https://odyssey-ballarat-salon.square.site/s/appointments">Book online
+        <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5"/></svg></a>
+      <a class="btn btn-line" href="tel:+61404186534">Call 0404 186 534</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="Odyssey Ballarat Salon, back to top"><b>ODYSSEY</b><small>BALLARAT SALON</small></a>
+    <div>501A Main Rd, Golden Point VIC 3350<br><a href="tel:+61404186534">0404 186 534</a> · <a href="mailto:odysseybyb@outlook.com">odysseybyb@outlook.com</a></div>
+    <nav aria-label="Footer">
+      <a href="https://odyssey-ballarat-salon.square.site/s/appointments">Book online</a>
+      <a href="https://odyssey-ballarat-salon.square.site/weddingenquiries">Wedding enquiries</a>
+      <a href="https://odyssey-ballarat-salon.square.site/s/gift-cards">Gift cards</a>
+      <a href="https://www.instagram.com/odysseybyb">Instagram</a>
+      <a href="https://www.facebook.com/odysseybyb">Facebook</a>
+    </nav>
+    <p class="fine">Redesign concept for Odyssey Ballarat Salon. Prices and hours are taken from the salon's live booking site. Placeholder bios and reviews are marked on the page.</p>
+  </div>
+</footer>
+
+<div class="bar" role="navigation" aria-label="Quick booking">
+  <a class="btn btn-gold" href="https://odyssey-ballarat-salon.square.site/s/appointments">Book online</a>
+  <a class="btn btn-line" href="tel:+61404186534">
+    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6.2 2.8 8 6.6 6.5 8.1a10 10 0 0 0 5.4 5.4l1.5-1.5 3.8 1.8-.6 2.9c-.1.5-.6.9-1.1.9A13.4 13.4 0 0 1 2.4 4.5c0-.5.4-1 .9-1.1z"/></svg>Call</a>
+</div>
+
+<script>
+(function(){
+  // hours in Ballarat (Australia/Melbourne), minutes from midnight; index = getDay()
+  var H={0:null,1:null,2:null,3:[540,1020],4:[570,1230],5:[540,1020],6:[510,930]};
+  var NAMES=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  function fmt(m){var h=Math.floor(m/60),mm=m%60,ap=h>=12?'pm':'am';h=h%12||12;return h+':'+(mm<10?'0':'')+mm+' '+ap}
+  var day,mins;
+  try{
+    var p=new Intl.DateTimeFormat('en-AU',{timeZone:'Australia/Melbourne',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+    var o={};p.forEach(function(x){o[x.type]=x.value});
+    day=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(o.weekday);
+    mins=(parseInt(o.hour,10)%24)*60+parseInt(o.minute,10);
+  }catch(e){var d=new Date();day=d.getDay();mins=d.getHours()*60+d.getMinutes()}
+  if(day<0)return;
+  var row=document.querySelector('#hours tr[data-day="'+day+'"]');
+  if(row)row.classList.add('today');
+  var t=H[day],msg,open=false;
+  if(t&&mins<t[0]){msg='Opens today at '+fmt(t[0])}
+  else if(t&&mins<t[1]){msg='Open now · until '+fmt(t[1]);open=true}
+  else{
+    for(var i=1;i<=7;i++){var nd=(day+i)%7;if(H[nd]){msg='Closed now · opens '+(i===1?'tomorrow':NAMES[nd])+' at '+fmt(H[nd][0]);break}}
+  }
+  var el=document.getElementById('today-status');
+  if(el&&msg)el.innerHTML='<span class="status-dot'+(open?'':' closed')+'" aria-hidden="true"></span>'+msg;
+  // on small screens, fold the long price list down to its first group
+  if(window.matchMedia('(max-width:720px)').matches){
+    document.querySelectorAll('.menu details').forEach(function(d,i){if(i>0)d.removeAttribute('open')});
+    document.querySelectorAll('.jump a').forEach(function(a){a.addEventListener('click',function(){var t=document.querySelector(a.getAttribute('href'));if(t)t.setAttribute('open','')})});
+  }
+})();
+</script>
+</body>
+</html>
